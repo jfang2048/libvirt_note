@@ -2,22 +2,26 @@
 
 Environment-specific host/IP values in command examples should be treated as placeholders.
 
-```shell
+## Example 1: Fedora Workstation
+
+```bash
 sudo virt-install \
---name fedora-compile \
---vcpus sockets=1,cores=24 \
---memory 24576 \
---disk /etc/libvirt/images/fedora-compile.raw,size=512,format=raw,bus=virtio \
---network network=default,model=virtio \
---cdrom /etc/libvirt/images/Fedora-Workstation-Live-x86_64-37-1.7.iso \
---video qxl \
---channel spicevmc \
---graphics spice,listen=0.0.0.0,port=5910,password=<SPICE_PASSWORD> \
---os-variant fedora37 \
---boot uefi
+  --name fedora-compile \
+  --vcpus sockets=1,cores=24 \
+  --memory 24576 \
+  --disk /etc/libvirt/images/fedora-compile.raw,size=512,format=raw,bus=virtio \
+  --network network=default,model=virtio \
+  --cdrom /etc/libvirt/images/Fedora-Workstation-Live-x86_64-37-1.7.iso \
+  --video qxl \
+  --channel spicevmc \
+  --graphics spice,listen=0.0.0.0,port=5910,password=<SPICE_PASSWORD> \
+  --os-variant fedora37 \
+  --boot uefi
 ```
 
-```shell
+## Example 2: Debian VM
+
+```bash
 virt-install \
   --name jwang-test \
   --memory 16384 \
