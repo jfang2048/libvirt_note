@@ -2,21 +2,18 @@
 
 Environment-specific host/IP values in command examples should be treated as placeholders.
 
-https://github.com/DualCoder/vgpu_unlock
-Unlock vGPU functionality for consumer-grade Nvidia GPUs.
+## Projects
 
----
+- [DualCoder/vgpu_unlock](https://github.com/DualCoder/vgpu_unlock)
+  - Unlock vGPU functionality for consumer-grade NVIDIA GPUs.
+- [Arc-Compute/LibVF.IO](https://github.com/Arc-Compute/LibVF.IO)
+  - Vendor-neutral GPU multiplexing tool driven by YAML and VFIO.
 
+## Notes
 
-https://github.com/Arc-Compute/LibVF.IO
-LibVF.IO is a vendor neutral GPU multiplexing tool driven by YAML & VFIO.
+- Allocate VRAM appropriately; guest and host contention can reduce performance.
+- Historical behavior in Intel GVT-g environments showed near-full performance when contention was low.
 
+## `vgpu_unlock`
 
-allocate the vram and that the GPU performance was full (unless two things were hitting the GPU on the guest and host at the time) That is how it worked with Intel gvt-g anyway.
-
-
-
-
-## vgpu_unlock
-
-https://krutavshah.github.io/GPU_Virtualization-Wiki/overview.html#system-requirements
+- [GPU Virtualization Wiki: System Requirements](https://krutavshah.github.io/GPU_Virtualization-Wiki/overview.html#system-requirements)
