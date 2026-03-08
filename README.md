@@ -6,7 +6,7 @@ This repository contains operational notes, troubleshooting guides, and utility 
 
 ```text
 .
-├── docs/            # Thematic documentation (KVM, GPU, Proxmox, containers), and noye of optimization for vm
+├── docs/            # Thematic documentation (KVM, GPU, Proxmox, containers), and note of **optimization** for vm
 ├── scripts/         # Operational automation scripts (setup, VM lifecycle, inspection)
 └── references/      # Reference-only materials (books/PDFs)
 ```
